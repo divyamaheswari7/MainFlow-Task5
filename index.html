@@ -6,21 +6,21 @@
 
     <style>
       #calculator {
-        border: 2px solid rgb(205, 204, 204);
+        border: 2px solid rgb(205, 230, 230);
         border-radius: 6px;
-        width: 300px;
+        width: 380px;
         text-align: center;
-        margin: 3% 40%;
-        background-color: rgb(0, 100, 102);
+        margin: 5% 40%;
+        background-color: powderblue;
         padding: 5px;
       }
       #display {
         margin: 10px;
-        width: 88%;
+        width: 85%;
         border: 3px solid;
         height: 70px;
-        background-color: black;
-        color: rgb(246, 248, 246);
+        background-color: ghostwhite;
+        color: black;
         font-size: 42px;
         text-align: right;
         padding: 1px;
@@ -47,7 +47,7 @@
       }
 
       body {
-        background-color: rgb(0, 0, 41);
+        background-color: white;
       }
     </style>
   </head>
@@ -92,28 +92,22 @@
           4
         </button>
         <button
-          onclick="currentDisplay = currentDisplay + '-';
-            document.querySelector('#display').value = currentDisplay;"
-        >
-          -
-        </button>
-        <button
           onclick="currentDisplay = currentDisplay + '5';
             document.querySelector('#display').value = currentDisplay;"
         >
           5
         </button>
         <button
+          onclick="currentDisplay = currentDisplay + '-';
+            document.querySelector('#display').value = currentDisplay;"
+        >
+          -
+        </button>
+        <button
           onclick="currentDisplay = currentDisplay + '6';
             document.querySelector('#display').value = currentDisplay;"
         >
           6
-        </button>
-        <button
-          onclick="currentDisplay = currentDisplay + '*';
-            document.querySelector('#display').value = currentDisplay;"
-        >
-          *
         </button>
         <button
           onclick="currentDisplay = currentDisplay + '7';
@@ -128,10 +122,10 @@
           8
         </button>
         <button
-          onclick="currentDisplay = currentDisplay + '/';
+          onclick="currentDisplay = currentDisplay + '*';
             document.querySelector('#display').value = currentDisplay;"
         >
-          /
+          *
         </button>
         <button
           onclick="currentDisplay = currentDisplay + '9';
@@ -144,6 +138,12 @@
             document.querySelector('#display').value = currentDisplay;"
         >
           0
+        </button>
+        <button
+          onclick="currentDisplay = currentDisplay + '/';
+            document.querySelector('#display').value = currentDisplay;"
+        >
+          /
         </button>
 
         <button style="background-color: rgb(254, 107, 2);" onclick="deleteLast()">DEL</button>
